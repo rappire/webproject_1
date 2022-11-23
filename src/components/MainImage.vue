@@ -1,13 +1,13 @@
 <template>
-	<ul class = "main-box">
-		<li class = "item">
-			<div class = "image-box"> <img src="../assets/logo.png" alt=""> </div>
+	<ul class = "MainImage-box">
+		<li class = "MainImage-item">
+			<div class = "MainImage-image-box"> <img src="../assets/logo.png" alt=""> </div>
 		</li>
-		<li class = "item">
-			<div class = "image-box"> 테스트 문자열 입니다. </div>
+		<li class = "MainImage-item">
+			테스트 문자열 입니다.
 		</li>
-		<li class = "item">
-			<div class = "image-box"> 테스트 문자열 입니다. </div>
+		<li class = "MainImage-item">
+			테스트 문자열 입니다.
 		</li>
 	</ul>
 </template>
@@ -19,37 +19,36 @@ export default {
 </script>
 
 <style scoped>
-.main-box{
+.MainImage-box{
 	width: 100%;
-	height: 90%;
-	margin: 0;
-	padding: 0;
+	height: 90vh;
 	display: flex;
 	justify-content: space-around;
 }
-.item{
+.MainImage-item{
 	width: 100%;
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+    padding-top: 20%;
+}
+.MainImage-item:nth-child(1){
 	background-color: #8091a5;
 }
-.item:nth-child(1){
-	background-color: #8091a5;
-}
-.item:nth-child(2){
+.MainImage-item:nth-child(2){
 	background-color: #2a58a6;
 }
-.item:nth-child(3){
+.MainImage-item:nth-child(3){
 	background-color: #082239;
 }
 
-.item:hover{
-	transition: background-color 1s;
+.MainImage-item:hover{
+	transition: all 1s;
 	background-color: black;
 	color : white;
 }
-.image-box{
+.MainImage-image-box{
 	background-image: "";
 	display: block;
 	padding: 30px;

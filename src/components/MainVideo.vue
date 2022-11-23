@@ -5,7 +5,7 @@
       <p>에러 문자열</p>
     </video>
     <div class = "video-text">
-          <p>테스트 문자열 입니다.</p>
+      <p>테스트 문자열 입니다.</p>
     </div>
   </div>
 </template>
@@ -21,8 +21,8 @@
 .video-box{
       width: 100%; 
       height: 100vh;
-      overflow: hidden;
       margin: 0px auto; 
+      overflow: hidden;
       position: relative;
     }
     .video{

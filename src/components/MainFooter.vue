@@ -1,6 +1,6 @@
 <template>
     <div class = "footer-box">
-        CONTACT
+        <p>CONTACT<br><br>EMAIL</p>
     </div>
 </template>
 
@@ -15,6 +15,8 @@ export default {
     display: flex;
     justify-content: space-around;
     width : 100%;
-    height: 10%;
+    height: 10vh;
+    background-color: black;
+    color : white;
 }
 </style>
