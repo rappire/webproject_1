@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .MainImage-box{
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	display: flex;
 	justify-content: space-around;
 }
