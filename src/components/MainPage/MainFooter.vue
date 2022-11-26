@@ -1,6 +1,6 @@
 <template>
     <div class = "footer-box">
-        <p>CONTACT<br><br>EMAIL</p>
+        <p><br>CONTACT<br><br>EMAIL</p>
     </div>
 </template>
 

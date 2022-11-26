@@ -1,7 +1,7 @@
 <template>
   <div class = 'video-box'>
     <video class = 'video' autoplay muted loop preload>
-      <source src = "../assets/video.mp4" type="video/mp4">
+      <source src = "@/assets/MainPage/video.mp4" type="video/mp4">
       <p>에러 문자열</p>
     </video>
     <div class = "video-text">

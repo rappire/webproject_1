@@ -1,12 +1,12 @@
 <template>
     <nav>
         <ul class = "header-box" :class="{ 'header-box--background': show }">
-            <li class = "header-item"><img src="../assets/logo.png" alt="##"></li>
-            <li class = "header-item">HOME</li>
-            <li class = "header-item">PORTFOLIO</li>
-            <li class = "header-item">DEMO VIDS</li>
-            <li class = "header-item">GALLERY</li>
-            <li class = "header-item">CONTACT</li>
+            <li class = "header-item"><img src="@/assets/MainPage/logo.png" alt="##"></li>
+            <li class = "header-item"><router-link to="/main">HOME</router-link></li>
+            <li class = "header-item"><router-link to="/portfolio">PORTFOLIO</router-link></li>
+            <li class = "header-item"><router-link to="/demovid">DEMO VIDS</router-link></li>
+            <li class = "header-item"><router-link to="/gallery">GALLERY</router-link></li>
+            <li class = "header-item"><router-link to="/contact">CONTACT</router-link></li>
         </ul>  
     </nav>
 </template>
@@ -23,7 +23,7 @@ export default {
     methods: {
         updateScroll(){
             this.scroll_position = window.scrollY;
-            if((window.pageYOffset || document.documentElement.scrollTop) > 700){
+            if((window.pageYOffset || document.documentElement.scrollTop) > 850){
                 this.show = true;
             }
             else{
@@ -59,13 +59,17 @@ export default {
 }
 .header-item{
     display : flex;
+    justify-content:center;
     align-items: center;
 	list-style: none;
     font-weight: bold;
+    width: 10%;
 }
 
 .header-item:hover{
     text-decoration: underline;
+    /* background-color: white;
+    color : black */
 }
 
 .header-item img{
@@ -73,4 +77,24 @@ export default {
     height: auto;
     display : block;
 }
+.header-box a { 
+    text-decoration: none;
+    color: black; 
+}
+.header-box--background a{
+    background-color: black;
+    color : white
+}
+a:visited { 
+    text-decoration: none; 
+}
+a:hover { 
+    text-decoration: none;
+}
+a:focus { 
+    text-decoration: none;
+}
+a:hover, a:active { 
+    text-decoration: none;
+}     
 </style>

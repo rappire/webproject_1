@@ -1,24 +1,24 @@
-# test_project
-
-## Project setup
+## 프로젝트 준비
 ```
-npm install
+node version '18.12.1'
 ```
 
-### Compiles and hot-reloads for development
+### NPM 설치
+```
+npm i -g npm@8.19.2
+```
+
+### VUE 설치
+```
+npm install -g @vue/cli@2.7.14
+```
+
+### ROUTER 설치
+```
+npm i vue-router@3.5.3
+```
+
+### 시작
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
