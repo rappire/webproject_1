@@ -1,25 +1,20 @@
-## 프로젝트 준비
+### NODE 및 NPM 설치
 ```
-node version '18.12.1'
-https://nodejs.org/ca/blog/release/v18.12.1/
-```
+node version '18.12.1' 아래 링크에서 설치
+=> https://nodejs.org/ca/blog/release/v18.12.1/
 
-### NPM 설치
-```
+NPM 설치
 npm i -g npm@8.19.2
 ```
 
-### VUE 설치
+### VUE 및 패키지 설치
 ```
-npm install -g vue/cli@5.0.8
-```
-
-### ROUTER 설치
-```
-npm i vue-router@3.5.3
+프로젝트 폴더에서 해당 명령서 사용
+npm install
 ```
 
 ### 시작
 ```
+프로젝트 폴더에서 해당 명령서 사용
 npm run serve
 ```
