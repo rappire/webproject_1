@@ -1,18 +1,18 @@
 <template>
     <div>
         <PageHeader></PageHeader>
-        <GalleryPage></GalleryPage>
+        <GalleryImage></GalleryImage>
     </div>
 </template>
 
 <script>
 import PageHeader from '@/components/PageHeader.vue';
-import GalleryPage from '@/components/GalleryPage/GalleryImage.vue';
+import GalleryImage from '@/components/GalleryPage/GalleryImage.vue';
 
 export default {
     components: {
         PageHeader,
-        GalleryPage,
+        GalleryImage,
     },
 }
 </script>

@@ -1,9 +1,8 @@
 <template>
-  <div>
+  <div class = "gallery-box">
     <ul>
       <li v-for = "item in itemlist" v-bind:key="item">
-        <!-- <img src={{item}} alt="err"> -->
-        {{item}}
+        <img v-bind:src=item alt="err" class = "gallery-img">
       </li>
     </ul>
   </div>
@@ -14,12 +13,19 @@
 export default {
   data() {
     return {
-      itemlist :["@/assets/GalleryPage/image1", "image2"]
+      itemlist :[require("@/assets/PortfolioPage/image1.jpg"),require("@/assets/PortfolioPage/image2.jpg"), require("@/assets/PortfolioPage/image3.jpg")]
     }
   }
 }
 </script>
 
 <style>
-
+.gallery-box{
+  padding-top: 10vh;
+  height: 100vh;
+  font-size: 100px;
+}
+.gallery-img{
+  max-width: 100%;
+}
 </style>
